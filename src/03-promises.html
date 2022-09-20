@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise generator</title>
+    <link rel="stylesheet" href="dist/notiflix-3.2.5.min.css" />
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
@@ -12,15 +13,15 @@
     <form class="form">
       <label>
         First delay (ms)
-        <input type="number" name="delay" required />
+        <input class="js-delay" type="number" name="delay" required />
       </label>
       <label>
         Delay step (ms)
-        <input type="number" name="step" required />
+        <input class="js-step" type="number" name="step" required />
       </label>
       <label>
         Amount
-        <input type="number" name="amount" required />
+        <input class="js-amount" type="number" name="amount" required />
       </label>
       <button type="submit">Create promises</button>
     </form>

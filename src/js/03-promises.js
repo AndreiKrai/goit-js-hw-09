@@ -1,4 +1,5 @@
 import Notiflix from 'notiflix';
+
 const inputDelayEl = document.querySelector('.js-delay');
 const inputStepEl = document.querySelector('.js-step');
 const inputAmountEl = document.querySelector('.js-amount');

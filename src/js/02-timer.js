@@ -54,14 +54,11 @@ function convertMs(ms) {
 function onStartBtnClick(event) {
   intervalId = setInterval(() => {
     ms = selectedDatesInMs - new Date().getTime();
-    if (ms === 0) {
-    }
     const dateCount = convertMs(ms);
     daysEl.textContent = addLeadingZero(dateCount.days);
     hoursEl.textContent = addLeadingZero(dateCount.hours);
     minutesEl.textContent = addLeadingZero(dateCount.minutes);
     secondsEl.textContent = addLeadingZero(dateCount.seconds);
-    // const recurs = setInterval(onStartBtnClick, 1000);
   }, 1000);
 }
 // const onStartBtnCount = setInterval(onStartBtnClick, 1000);
@@ -69,8 +66,4 @@ function onStartBtnClick(event) {
 function addLeadingZero(value) {
   // return value;
   return value.toString().padStart(2, '0');
-  т;
 }
-// console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
-// console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
-// console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}

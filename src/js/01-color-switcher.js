@@ -4,7 +4,7 @@ const bodyEl = document.querySelector('body');
 
 startBtnEl.addEventListener('click', onClickStartBtn);
 stopBtnEl.addEventListener('click', onClickStopBtn);
-
+let setIntervalBgr = null;
 function onClickStartBtn(event) {
   setIntervalBgr = setInterval(changeBgrColor, 1000);
   startBtnEl.disabled = true;
